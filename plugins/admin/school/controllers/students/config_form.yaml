@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Student
+
+# Model Form Field configuration
+form: $/admin/school/models/student/fields.yaml
+
+# Model Class name
+modelClass: Admin\School\Models\Student
+
+# Default redirect location
+defaultRedirect: admin/school/students
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: admin/school/students/update/:id
+    redirectClose: admin/school/students
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: admin/school/students
+    redirectClose: admin/school/students
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
